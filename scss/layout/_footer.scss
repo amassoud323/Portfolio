@@ -1,0 +1,14 @@
+footer {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: -35px;
+  padding-bottom: 5px;
+  background-color: white;
+  .foot-link {
+    margin: 0 auto;
+    color: $darkblue-headings;
+    @include scroll-links;
+    svg { fill: $darkblue-headings; }
+  }
+}

@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 15px 5%;
   @media (min-width: $brk--md) { flex-direction: row;}
-  @media (min-width: $brk--lg) { margin: 15px 0; } 
+  @media (min-width: $brk--lg) { margin: 15px 5px; } 
 
   &__text {
     padding-right: 5px;
@@ -13,7 +13,7 @@
       margin: 5px 0 5px 0;
     }
     p { 
-      font-size: .85rem; 
+      font-size: $font-size--small; 
       color: $grey-text;
     }
 
@@ -50,6 +50,14 @@
       &::placeholder { top: 0; }
     }
 
+    button {
+      padding: 10px 15px;
+      width: 25%;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      cursor: pointer;
+      color: $darkblue-headings;
+    }
     @media (min-width: $brk--md) { 
       width: 48%;
       justify-content: end;

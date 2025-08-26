@@ -1,12 +1,15 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   padding: 0 5px;
-  background-color: lightgray;
+  background-color: $blue-main;
+  @media (min-width: $brk--md) { 
+    @include border-lg-style;
+  }
   
   &__buttons {
     display: flex;
@@ -14,7 +17,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    @media (min-width: $brk--md) { width: 135px; }
+    @media (min-width: $brk--md) { width: 125px; }
     &--initials {
       display: flex;
       color: $blue-main;
@@ -71,24 +74,42 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: lightgray;
+      @include border-lg-style;
+      
       overflow-x: hidden;
-      padding-right: 10px;
-      text-align: center;
       &--list {
         width: 135px;
         display: flex;
         flex-direction: column;
         list-style: none;
         font-size: .875rem;
-        li { margin: 10px 0 10px -10px;}
-        justify-content: center;
+        li { margin: 10px 0;}
+        text-align: center; 
         padding-left: 0;
+        border: 1px solid $blue-main;
+        border-left: none;
       }
     }
-  } 
 
-  .links--social {
-    @include icons;
-  }
+    &--social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      button {
+        @include icons;
+        margin: 0;
+        background-color: $blue-main;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        svg { fill: white; }
+        &:hover {
+          cursor: pointer;
+          background-color: color-mix(in srgb, #{$blue-main} 85%, black 15%);
+        }
+      }
+    }
+    
+  } 
+  
+  
 }

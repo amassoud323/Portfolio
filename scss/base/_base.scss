@@ -6,11 +6,17 @@
   margin-right: 0;
 }
 
+body { 
+  margin: 0; 
+  background-color: color-mix(in srgb, #{$blue-main} 30%, white 70%);
+}
+
 .wrapper {
   @media (min-width: 1200px) {
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    background-color: white;
   }
 }
 main {
@@ -19,4 +25,5 @@ main {
     margin-top: 0;
     margin-left: 135px;
   }
+  margin-bottom: 30px;
 }
