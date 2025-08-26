@@ -1,4 +1,45 @@
 .banner {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  text-align: center;  
+  background-image: url("../img/banner-bg.jpg");
+  background-position: center;
+  color: white;
+
+  @media (min-width: $brk--md) {
+    height: 50vh;
+    width: 100%;
+  }
+
+  @media (min-width: $brk--lg) {
+    height: 60vh;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h1 {
+      margin-top: 30%;
+      font-weight: $font-weight--bold;
+      @media (min-width: $brk--md) { margin-top: 17.5%; }
+    }
+
+    p {
+      margin-top: 2px;
+    }
+    
+    &--link {
+      margin-top: auto;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  
 }

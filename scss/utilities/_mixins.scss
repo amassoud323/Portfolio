@@ -1,0 +1,14 @@
+// Icon styling
+@mixin icons {
+  display: flex;  
+  width: 65px;
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  svg {
+    fill: $blue-main; 
+    max-width: 60%;
+    max-height: 50%;     
+  }  
+}

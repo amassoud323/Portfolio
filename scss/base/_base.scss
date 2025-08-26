@@ -1,5 +1,22 @@
 * {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Lexend Deca", Helvetica, Arial, sans-serif;
   font-weight: $font-weight--medium;
   box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wrapper {
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+main {
+  margin-top: 80px;
+  @media (min-width: $brk--md) {
+    margin-top: 0;
+    margin-left: 135px;
+  }
 }
