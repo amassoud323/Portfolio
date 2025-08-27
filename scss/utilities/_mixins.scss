@@ -20,7 +20,7 @@
   text-align: center;
   text-decoration: none;
   font-size: $font-size--small;
-  .text:hover { text-decoration: underline; }
+  &:hover { text-decoration: underline; }
   svg {
     height: 25px;
     width: 25px;
@@ -32,4 +32,13 @@
 @mixin border-lg-style {
   background-color: white; 
   border-right: 3px solid $blue-main;
+}
+
+// Raise-up effect when hovering
+@mixin raise-up {
+  transition: all 0.5s ease;
+  transform: translateY(0);
+  &:hover {
+    transform: translateY(-10px);
+  }
 }

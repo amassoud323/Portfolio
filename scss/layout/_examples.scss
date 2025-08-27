@@ -1,0 +1,9 @@
+.examples {
+  padding: 10px;
+
+  .home-link {
+    @include scroll-links;
+    color: $darkblue-headings;
+    svg { fill: $darkblue-headings; }
+  }
+}

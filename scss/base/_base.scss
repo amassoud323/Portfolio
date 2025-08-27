@@ -1,6 +1,7 @@
 * {
   font-family: "Lexend Deca", Helvetica, Arial, sans-serif;
   font-weight: $font-weight--medium;
+  color: $darkblue-headings;
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
@@ -8,12 +9,12 @@
 
 body { 
   margin: 0; 
-  background-color: color-mix(in srgb, #{$blue-main} 30%, white 70%);
+  //background-color: color-mix(in srgb, #{$blue-main} 30%, white 70%);
 }
 
 .wrapper {
   @media (min-width: 1200px) {
-    width: 1200px;
+    width: 90%; // 1200px;
     margin: 0 auto;
     position: relative;
     background-color: white;

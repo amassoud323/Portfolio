@@ -3,28 +3,38 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
 
   &__card {
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     border-radius: 3px;
     width: 90%;
     height: 45vh;
     text-align: start;
+    @include raise-up;
     a img {
       margin: 0;
       width: 100%;
     }
 
     &--text {
-      padding: 0 10px 0 10px;
+      padding: 10px;
       h2 { color: $darkblue-headings; }
+      a {
+        text-decoration: none;
+        color: $blue-main;
+        padding: 10px 0;
+        &:hover { text-decoration: underline; }
+      }
     }
 
     @media (min-width: $brk--sm) { width: 45%; }
     @media (min-width: $brk--md) { width: 30%; }
     @media (min-width: $brk--lg) { 
-      height: 50vh; 
+      
+      height: fit-content; 
       justify-content: space-between;
     }
   }

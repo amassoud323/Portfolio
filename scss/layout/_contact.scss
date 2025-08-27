@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 15px 5%;
+  padding: 25px 5%;
   @media (min-width: $brk--md) { flex-direction: row;}
   @media (min-width: $brk--lg) { margin: 15px 5px; } 
 
