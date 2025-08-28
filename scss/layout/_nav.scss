@@ -6,6 +6,7 @@
   left: 0;
   width: 100vw;
   padding: 0 5px;
+  z-index: 1;
   background-color: $blue-main;
   @media (min-width: $brk--md) { 
     @include border-lg-style;
@@ -23,6 +24,7 @@
       color: $blue-main;
       background-color: white;
       font-size: 3rem;
+      @media (min-width: $brk--md) { font-size: 4rem; }
       padding: 5px;
       margin: 5px 5px 5px 0;
       border: 1px solid $blue-main;
@@ -82,12 +84,21 @@
         display: flex;
         flex-direction: column;
         list-style: none;
+        padding: 20px 0;
         font-size: .875rem;
-        li { margin: 10px 0;}
         text-align: center; 
         padding-left: 0;
         border: 1px solid $blue-main;
         border-left: none;
+        
+        li a { 
+          display: flex;
+          margin: 10px 0;
+          justify-content: center;
+          color: $blue-main;
+          text-decoration: none;
+          &:hover { text-decoration:  underline; }
+        }
       }
     }
 

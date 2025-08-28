@@ -9,15 +9,15 @@
 
 body { 
   margin: 0; 
-  //background-color: color-mix(in srgb, #{$blue-main} 30%, white 70%);
 }
 
 .wrapper {
+  padding: 5px;
   @media (min-width: 1200px) {
     width: 90%; // 1200px;
     margin: 0 auto;
     position: relative;
-    background-color: white;
+    
   }
 }
 main {
@@ -28,3 +28,14 @@ main {
   }
   margin-bottom: 30px;
 }
+
+.home-link {
+    @include scroll-links;
+    color: $darkblue-headings;
+    svg { 
+      fill: $darkblue-headings;
+      margin-bottom: 5px;
+     }
+  }
+
+  .navbar__buttons--initials { text-decoration: none; }
