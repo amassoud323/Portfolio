@@ -66,7 +66,39 @@
     <div class="wrapper">
     <div class="examples">
       <h1>Coding Examples</h1>
-      <p>Coming soon</p>
+      <h3>Netmatters Homepage Recreation</h3>
+      <div class="code-example">
+        <pre><code>// Colour codes for easy use throughout project without having to manually define each time</pre></code>
+        <pre><code>@mixin service-colors {</pre></code>
+        <pre><code><span class="indent">&--base { --color: #{$bay-view}; }</span></pre></code>
+        <pre><code><span class="indent">&--blue { --color: #{$magical-merlin}; }</span></pre></code>
+        <pre><code><span class="indent">&--green { --color: #{$ufo-green}; }</span></pre></code>
+        <pre><code><span class="indent">&--red { --color: #{$valencia}; }</span></pre></code>
+        <pre><code><span class="indent">&--purple { --color: #{$violet-frog}; }</span></pre></code>
+        <pre><code><span class="indent">&--crimson { --color: #{$radical-red}; }</span></pre></code>
+        <pre><code><span class="indent">&--red-brown { --color: #{$punch}; } </span></pre></code>
+        <pre><code><span class="indent">&--orange { --color: #{$glistening-dawn}; }</span></pre></code>
+        <pre><code><span class="indent">&--grey { --color: #{$manatee}; }</span></pre></code>
+        <pre><code>}</pre></code>
+
+        <pre><code>// Colour-codes services section for use in services and dropdown menu</pre></code>
+        <pre><code>@mixin implement-service-colors {</pre></code>
+          <pre><code><span class="indent">@include service-colors;</span></pre></code>
+            <pre><code><span class="indent">&--icon {</span></pre></code>
+              <pre><code><span class="indent-2">@include icons; </span></pre></code>
+              <pre><code><span class="indent-2">background-color: var(--color, $dark-grey);</span></pre></code>
+              <pre><code><span class="indent-2">margin-bottom: 17px;</span></pre></code>
+            <pre><code><span class="indent">}</span></pre></code>
+
+            <pre><code><span class="indent">&--read-more {</span></pre></code>
+              <pre><code><span class="indent-2">@include button-read-more;</span></pre></code>
+              <pre><code><span class="indent-2">background-color: var(--color, $dark-grey);</span></pre></code>
+            <pre><code><span class="indent">}</span></pre></code>
+          <pre><code>}</pre></code>
+          </div>
+          <p>In this SCSS snippet, I first created a mixin to store certain colours that were repeated throughout the site, so I could later re-use them easily. In the subsequent mixin, I used these colours, and other previously defined mixins, to utilise these mixins in certain places throughout the site (for example, in the 'Our Services' section).</p>
+        
+      </div>
     </div>
     <a class="home-link" href="index.html">
       <svg class="icon icon-home1">

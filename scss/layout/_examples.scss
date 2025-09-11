@@ -6,4 +6,10 @@
     color: $darkblue-headings;
     svg { fill: $darkblue-headings; }
   }
+  .code-example { width: fit-content; padding: 3px;}
+  pre {
+    margin: 3px;
+    .indent { margin-left: 15px; }
+    .indent-2 { margin-left: 30px;}
+  }
 }
