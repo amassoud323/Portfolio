@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,10 +64,40 @@
   
   &__links {
     display: none;
+    &.open {
+      display: flex;
+      flex-direction: column;
+      background-color: $blue-main;
+      .navbar__links--list {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        list-style: none;
+        text-align: right;
+        li { 
+          margin: 5px 0;
+        }
+      }
+      .navbar__links--social { 
+        margin: 5px 0;  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25vw;
+        @media (min-width: $brk--sm) { width: 12vw; }
+        margin-left: auto;
+        button {
+          background-color: white;
+          margin-right: 0;
+          svg { fill: $blue-main; }
+        }
+      }
+    }
 
     @media (min-width: 992px) {
       display: flex;
       flex-direction: column;
+      background-color: white;
       margin-top: 100px;
       margin-right: 0;
       height: 100%;
@@ -119,8 +149,5 @@
         }
       }
     }
-    
   } 
-  
-  
 }

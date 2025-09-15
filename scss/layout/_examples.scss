@@ -1,15 +1,69 @@
 .examples {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .code-container {
+    display: flex;
+    flex-direction: row;
+  }
 
   .home-link {
     @include scroll-links;
     color: $darkblue-headings;
     svg { fill: $darkblue-headings; }
   }
-  .code-example { width: fit-content; padding: 3px;}
+
+  .code-example { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px;
+    background-color: color-mix(in srgb, $blue-main 10%, white 90%);
+    border: 2px solid $darkblue-headings;
+    border-radius: 3px;
+    font-size: $font-size--small;
+    flex-direction: column;
+    width: 100vw;
+    
+    @media (min-width: $brk--md) {
+      flex-direction: row;
+      width: 40vw; 
+    }
+    
+  }
+
+  .code-description {
+    padding: 0 10px;
+    text-align: right;
+    width: 30vw;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
   pre {
     margin: 3px;
-    .indent { margin-left: 15px; }
-    .indent-2 { margin-left: 30px;}
+    flex-wrap: wrap;
+    .indent { margin-left: 15px; font-family: 'Courier New', Courier, monospace; }
+    .indent-2 { margin-left: 30px; font-family: 'Courier New', Courier, monospace; }
+  }
+
+  code {
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+
+  .comment { 
+    font-style: italic; 
+    color: darkgreen; 
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .description {
+    font-style: italic;
+    color: $grey-text;
+
   }
 }
