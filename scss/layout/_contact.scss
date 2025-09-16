@@ -46,8 +46,7 @@
     }
 
     .message {
-      height: 20vh;
-      &::placeholder { top: 0; }
+      padding: 3px 70px 70px 3px;
     }
 
     button {

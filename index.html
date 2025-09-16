@@ -66,8 +66,12 @@
     <main>
       <div class="banner" id="banner">
         <div class="banner__text">
-          <h1>My name is Adam Massoud</h1>
-          <p>I'm a Web Developer</p>
+          <div id="animationContainer">
+            <div id="bannerAnimation">
+              <h1>My name is Adam Massoud</h1>
+              <p>I'm a Web Developer</p>
+            </div>
+          </div>
           <a class="banner__text--link" href="#contact">Scroll Down
             <svg class="icon icon-keyboard_arrow_down">
               <use xlink:href="#icon-keyboard_arrow_down"></use>
@@ -157,12 +161,13 @@
           <p>Alternatively, please fill out the contact form, and I will aim to reply as soon as possible.</p>
         </div>
 
-        <form class="contact__form">
+        <form class="contact__form" name="contactForm" onsubmit="return validateForm()">
           <div class="name-wrapper">
-            <input class="name" type="text" placeholder="First Name*">
-            <input class="name" type="text" placeholder="Last Name*">
+            <input class="name" type="text" name="fName" placeholder="First Name*">
+            <input class="name" type="text" name="sName" placeholder="Last Name*">
           </div>
-          <input type="email" placeholder="Email Address*">
+          <input type="email" name="email" placeholder="Email Address*">
+          <input type="tel" name="phone" placeholder="Phone number">
           <input type="text" placeholder="Subject">
           <input class="message" type="text" placeholder="Message">
           <button class="submit" type="submit">Submit</button>

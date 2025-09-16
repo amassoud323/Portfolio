@@ -9,6 +9,8 @@
 
 body { 
   margin: 0; 
+  //background-color: #F5FCFF;
+  background-color: color-mix(in srgb, $blue-main 5%, white 95%);
 }
 
 .wrapper {
