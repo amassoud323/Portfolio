@@ -10,16 +10,16 @@
 
   .home-link {
     @include scroll-links;
-    color: $darkblue-headings;
-    svg { fill: $darkblue-headings; }
+    color: var(--header);
+    svg { fill: var(--header); }
   }
 
   .code-example { 
     display: flex;
     flex-wrap: wrap;
     padding: 6px;
-    background-color: color-mix(in srgb, $blue-main 10%, white 90%);
-    border: 2px solid $darkblue-headings;
+    background-color: var(--main-background);
+    border: 2px solid var(--header);
     border-radius: 3px;
     font-size: $font-size--small;
     flex-direction: column;
@@ -63,7 +63,7 @@
 
   .description {
     font-style: italic;
-    color: $grey-text;
+    color: var(--text-alt);
 
   }
 }

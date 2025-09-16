@@ -11,7 +11,6 @@
     flex-direction: column;
     border-radius: 4px;
     width: 90%;
-    //height: 45vh;
     text-align: start;
     @include raise-up;
     a img {
@@ -21,10 +20,10 @@
 
     &--text {
       padding: 10px;
-      h2 { color: $darkblue-headings; }
+      h2 { color: var(--header); }
       a {
         text-decoration: none;
-        color: $blue-main;
+        color: var(--main-theme);
         padding: 10px 0;
         &:hover { text-decoration: underline; }
       }

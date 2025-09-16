@@ -7,7 +7,7 @@
   justify-content: center;
   margin: 0 auto;
   svg {
-    fill: $blue-main; 
+    fill: var(--main-theme); 
     max-width: 60%;
     max-height: 50%;     
   }  
@@ -30,8 +30,8 @@
 
 // Border large screen styling
 @mixin border-lg-style {
-  background-color: white; 
-  border-right: 3px solid $blue-main;
+  //background-color: white; 
+  border-right: 1px solid var(--text-alt);
 }
 
 // Raise-up effect when hovering
@@ -40,5 +40,56 @@
   transform: translateY(0);
   &:hover {
     transform: translateY(-10px);
+  }
+}
+
+// Day/night slider styling
+@mixin slider-style {
+  .mode {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 60px;
+    height: 34px;
+    background-color: var(--form-fill);
+    border-radius: 34px;
+  }
+
+  .mode input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-circle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-background);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  .toggle-circle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--header);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  #toggle:checked + .toggle-circle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
   }
 }

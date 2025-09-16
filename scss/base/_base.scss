@@ -1,22 +1,22 @@
 * {
   font-family: "Lexend Deca", Helvetica, Arial, sans-serif;
   font-weight: $font-weight--medium;
-  color: $darkblue-headings;
+  color: var(--header);
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body { 
   margin: 0; 
-  //background-color: #F5FCFF;
-  background-color: color-mix(in srgb, $blue-main 5%, white 95%);
+  background-color: var(--main-background);
 }
 
 .wrapper {
   padding: 5px;
   @media (min-width: 1200px) {
-    width: 90%; // 1200px;
+    width: 90%;
     margin: 0 auto;
     position: relative;
     
@@ -33,11 +33,12 @@ main {
 
 .home-link {
     @include scroll-links;
-    color: $darkblue-headings;
+    color: var(--header);
     svg { 
-      fill: $darkblue-headings;
+      fill: var(--header);
       margin-bottom: 5px;
      }
   }
 
   .navbar__buttons--initials { text-decoration: none; }
+

@@ -18,5 +18,14 @@ $brk--lg    : 1260px;
 $blue-main          : #8BA3E0;
 $grey-text          : #706f6f;
 $darkblue-headings  : #000030;
-// temp afc7ff -- i like this colour a lot but not sure where to include it
-//56b3d1
+$background-main    : color-mix(in srgb, $blue-main 5%, white 95%);
+$form-fill          : #ebebeb;
+$form-border        : #d3d3d3;
+
+// 'night' colours for dark mode
+$blue-main-night          : #C7D2F0;
+$darkblue-headings-night  : #EBEFFA;
+$grey-text-night          : #DBDBDB;
+$background-main-night    : #0F1B38;
+$form-fill-night          : #393939;
+$form-border-night        : #525252;

@@ -7,7 +7,7 @@
   width: 100vw;
   padding: 0 5px;
   z-index: 1;
-  background-color: $blue-main;
+  background-color: var(--main-theme);
   @media (min-width: $brk--md) { 
     @include border-lg-style;
   }
@@ -21,13 +21,14 @@
     @media (min-width: $brk--md) { width: 125px; }
     &--initials {
       display: flex;
-      color: $blue-main;
-      background-color: white;
+      color: var(--main-theme);
+      background-color: var(--form-fill);
       font-size: 3rem;
       @media (min-width: $brk--md) { font-size: 4rem; }
       padding: 5px;
       margin: 5px 5px 5px 0;
-      border: 1px solid $blue-main;
+      border: 1px solid var(--text-alt);
+      border-radius: 5%;
       margin-bottom: 5px;
       width: fit-content;
       @media (min-width: $brk--md) {margin: 5px auto; }
@@ -87,9 +88,9 @@
         @media (min-width: $brk--sm) { width: 12vw; }
         margin-left: auto;
         button {
-          background-color: white;
+          background-color: var(--form-fill);
           margin-right: 0;
-          svg { fill: $blue-main; }
+          svg { fill: var(--main-theme); }
         }
       }
     }
@@ -97,7 +98,7 @@
     @media (min-width: 992px) {
       display: flex;
       flex-direction: column;
-      background-color: #F5FCFF;
+      background-color: var(--main-theme);
       margin-top: 100px;
       margin-right: 0;
       height: 100%;
@@ -118,14 +119,13 @@
         font-size: .875rem;
         text-align: center; 
         padding-left: 0;
-        border: 1px solid $blue-main;
         border-left: none;
         
         li a { 
           display: flex;
           margin: 10px 0;
           justify-content: center;
-          color: $blue-main;
+          color: var(--form-fill);
           text-decoration: none;
           &:hover { text-decoration:  underline; }
         }
@@ -139,15 +139,16 @@
       button {
         @include icons;
         margin: 0;
-        background-color: $blue-main;
+        background-color: var(--form-fill);
         border: 1px solid transparent;
         border-radius: 5px;
-        svg { fill: white; }
+        svg { fill: var(--main-theme); }
         &:hover {
           cursor: pointer;
-          background-color: color-mix(in srgb, #{$blue-main} 85%, black 15%);
+          background-color: color-mix(in srgb, var(--form-fill) 90%, black 10%);
         }
       }
     }
   } 
+  @include slider-style;
 }

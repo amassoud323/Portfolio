@@ -1,0 +1,20 @@
+// == Day/night functionality ==
+// Defining colours for 'day' theme
+html {
+  --header: #{$darkblue-headings};
+  --main-theme: #{$blue-main};
+  --main-background: #{$background-main};
+  --text-alt: #{$grey-text};
+  --form-fill: #{$form-fill};
+  --form-border: #{$form-border};
+}
+
+// Defining colours for 'night' theme
+[data-theme="night"] {
+  --header: #{$darkblue-headings-night};
+  --main-theme: #{$blue-main-night};
+  --main-background: #{$background-main-night};
+  --text-alt: #{$grey-text-night};
+  --form-fill: #{$form-fill-night};
+  --form-border: #{$form-border-night};
+}

@@ -9,12 +9,12 @@
   &__text {
     padding-right: 5px;
     :is(h1, h3, h4) {
-      color: $darkblue-headings;
+      color: var(--header);
       margin: 5px 0 5px 0;
     }
     p { 
       font-size: $font-size--small; 
-      color: $grey-text;
+      color: var(--text-alt);
     }
 
     @media (min-width: $brk--md) { 
@@ -29,9 +29,9 @@
     gap: 10px;
 
     input {
-      background-color: #ebebeb;
+      background-color: var(--form-fill);
       padding: 5px;
-      border: 1px solid lightgray;
+      border: 1px solid var(--form-border);
       border-radius: 3px;
     }
 
@@ -52,10 +52,10 @@
     button {
       padding: 10px 15px;
       width: 25%;
-      border: 1px solid lightgray;
+      border: 1px solid var(--form-border);
       border-radius: 3px;
       cursor: pointer;
-      color: $darkblue-headings;
+      color: var(--header);
     }
     @media (min-width: $brk--md) { 
       width: 48%;

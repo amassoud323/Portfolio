@@ -4,11 +4,11 @@ footer {
   margin: 0 auto;
   margin-top: -35px;
   padding-bottom: 5px;
-  background-color: #F5FCFF;
+  background-color: var(--main-background);
   .foot-link {
     margin: 0 auto;
-    color: $darkblue-headings;
+    color: var(--header);
     @include scroll-links;
-    svg { fill: $darkblue-headings; }
+    svg { fill: var(--header); }
   }
 }

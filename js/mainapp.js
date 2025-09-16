@@ -17,7 +17,6 @@ function validateForm() {
   }
 
   // check phone number is entered as an 11-digit number starting with 0 IF the field is filled
-  // second number check too?
   if ((d != "") && (!/^0\d{10}$/.test(d))) {
     alert("Please ensure your phone number is entered correctly.");
     return false;
@@ -41,3 +40,13 @@ function banner() {
   }
 }
 document.addEventListener("DOMContentLoaded", banner);
+
+// Day/night switch
+const toggle = document.getElementById("toggle");
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    document.documentElement.setAttribute("data-theme", "night");
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+  }
+});
