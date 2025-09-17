@@ -21,11 +21,17 @@ $darkblue-headings  : #000030;
 $background-main    : color-mix(in srgb, $blue-main 5%, white 95%);
 $form-fill          : #ebebeb;
 $form-border        : #d3d3d3;
+$white-same         : #ebebeb; // same colour as form fill but different in dark theme
+$blue-same          : #8BA3E0; // for e.g. view project links where i don't want colour change
+$toggle-switch      : #000030; // same as darkblue-headings but changes to different
 
 // 'night' colours for dark mode
-$blue-main-night          : #C7D2F0;
+$blue-main-night          : #192D5D;//#C7D2F0;
 $darkblue-headings-night  : #EBEFFA;
 $grey-text-night          : #DBDBDB;
-$background-main-night    : #0F1B38;
+$background-main-night    : #050A14;
+$white-same-night         : #ebebeb;
 $form-fill-night          : #393939;
 $form-border-night        : #525252;
+$blue-same-night          : #8BA3E0;
+$toggle-switch-night      : #8BA3E0;

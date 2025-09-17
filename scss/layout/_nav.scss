@@ -18,11 +18,17 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    @media (min-width: $brk--md) { width: 125px; }
+    @media (min-width: $brk--md) { 
+      width: 125px; 
+      height: 139px; 
+      display: flex; 
+      flex-direction: column; 
+      z-index: 100;
+    }
     &--initials {
       display: flex;
       color: var(--main-theme);
-      background-color: var(--form-fill);
+      background-color: var(--white-same);
       font-size: 3rem;
       @media (min-width: $brk--md) { font-size: 4rem; }
       padding: 5px;
@@ -31,7 +37,7 @@
       border-radius: 5%;
       margin-bottom: 5px;
       width: fit-content;
-      @media (min-width: $brk--md) {margin: 5px auto; }
+      @media (min-width: $brk--md) {margin: 5px auto 8px auto; }
     }
 
     &--menu-button {
@@ -68,16 +74,14 @@
     &.open {
       display: flex;
       flex-direction: column;
-      background-color: $blue-main;
+      background-color: var(--main-theme);
       .navbar__links--list {
         display: flex;
         flex-direction: column;
         margin-left: auto;
         list-style: none;
         text-align: right;
-        li { 
-          margin: 5px 0;
-        }
+        li { margin: 5px 0; }
       }
       .navbar__links--social { 
         margin: 5px 0;  
@@ -88,7 +92,7 @@
         @media (min-width: $brk--sm) { width: 12vw; }
         margin-left: auto;
         button {
-          background-color: var(--form-fill);
+          background-color: var(--white-same);
           margin-right: 0;
           svg { fill: var(--main-theme); }
         }
@@ -99,7 +103,7 @@
       display: flex;
       flex-direction: column;
       background-color: var(--main-theme);
-      margin-top: 100px;
+      margin-top: 110px;
       margin-right: 0;
       height: 100%;
       width: 135px;
@@ -125,7 +129,7 @@
           display: flex;
           margin: 10px 0;
           justify-content: center;
-          color: var(--form-fill);
+          color: var(--white-same);
           text-decoration: none;
           &:hover { text-decoration:  underline; }
         }
@@ -139,14 +143,11 @@
       button {
         @include icons;
         margin: 0;
-        background-color: var(--form-fill);
+        background-color: var(--white-same);
         border: 1px solid transparent;
         border-radius: 5px;
         svg { fill: var(--main-theme); }
-        &:hover {
-          cursor: pointer;
-          background-color: color-mix(in srgb, var(--form-fill) 90%, black 10%);
-        }
+        @include button-hover;
       }
     }
   } 

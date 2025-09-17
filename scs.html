@@ -11,18 +11,24 @@
 </head>
 <body>
   <nav>
-    <div class="nav">
-      <div class="navbar">
-        <div class="navbar__buttons">
-          <a href="index.html" class="navbar__buttons--initials">AM</a>
-          <a href="#menu">
-            <div class="navbar__buttons--menu-button" onclick="menuButton()">
-              <div class="menu-button-bar"></div>
-              <div class="menu-button-bar"></div>
-              <div class="menu-button-bar"></div>
+     <nav>
+      <div class="nav">
+        <div class="navbar">
+          <div class="navbar__buttons">
+            <a href="index.html" class="navbar__buttons--initials">AM</a>
+            <div class="mode">
+              <label>
+                <input id="toggle" type="checkbox">
+                <span class="toggle-circle"></span>
+              </label>
             </div>
-          </a>
-        </div>
+              <div class="navbar__buttons--menu-button" onclick="menuButton()">
+                <div class="menu-button-bar"></div>
+                <div class="menu-button-bar"></div>
+                <div class="menu-button-bar"></div>
+              </div>
+            </a>
+          </div>
 
         <div class="navbar__links" id="navbarLinks">
           <ul class="navbar__links--list">

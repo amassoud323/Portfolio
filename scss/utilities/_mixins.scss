@@ -28,10 +28,17 @@
   }
 }
 
+// Button hover styling
+@mixin button-hover {
+  &:hover {
+    cursor: pointer;
+    background-color: color-mix(in srgb, var(--white-same) 90%, black 10%);
+  }
+}
+
 // Border large screen styling
 @mixin border-lg-style {
-  //background-color: white; 
-  border-right: 1px solid var(--text-alt);
+  border-right: 1px solid var(--form-fill);
 }
 
 // Raise-up effect when hovering
@@ -51,7 +58,7 @@
     align-items: center;
     width: 60px;
     height: 34px;
-    background-color: var(--form-fill);
+    background-color: var(--form-border);
     border-radius: 34px;
   }
 
@@ -68,7 +75,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--main-background);
+    background-color: var(--white-same);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
@@ -81,7 +88,7 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--header);
+    background-color: var(--toggle-switch);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;

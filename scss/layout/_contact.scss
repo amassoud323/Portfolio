@@ -56,6 +56,9 @@
       border-radius: 3px;
       cursor: pointer;
       color: var(--header);
+      background-color: var(--form-fill);
+      @include button-hover;
+      &:hover { background-color: color-mix(in srgb, var(--form-border) 90%, black 10%); }
     }
     @media (min-width: $brk--md) { 
       width: 48%;

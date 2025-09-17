@@ -41,7 +41,7 @@ function banner() {
 }
 document.addEventListener("DOMContentLoaded", banner);
 
-// Day/night switch
+// Light/dark switch
 const toggle = document.getElementById("toggle");
 toggle.addEventListener("change", () => {
   if (toggle.checked) {

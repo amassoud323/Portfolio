@@ -7,6 +7,9 @@ html {
   --text-alt: #{$grey-text};
   --form-fill: #{$form-fill};
   --form-border: #{$form-border};
+  --white-same: #{$white-same};
+  --blue-same: #{$blue-same};
+  --toggle-switch: #{$toggle-switch};
 }
 
 // Defining colours for 'night' theme
@@ -17,4 +20,7 @@ html {
   --text-alt: #{$grey-text-night};
   --form-fill: #{$form-fill-night};
   --form-border: #{$form-border-night};
+  --white-same: #{$white-same-night};
+  --blue-same: #{$blue-same-night};
+  --toggle-switch: #{$toggle-switch-night};
 }
