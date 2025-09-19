@@ -7,7 +7,9 @@ $font-weight--very-bold  : 700;
 $font-weight--ultra-bold : 900;
 
 // Font Sizes
+$font-size-xs     : .75rem;
 $font-size--small : .85rem;
+
 // Breakpoints
 $brk--xs    : 1px;
 $brk--sm    : 768px;
@@ -15,23 +17,34 @@ $brk--md    : 992px;
 $brk--lg    : 1260px;
 
 //Theme colours
-$blue-main          : #8BA3E0;
-$grey-text          : #706f6f;
-$darkblue-headings  : #000030;
-$background-main    : color-mix(in srgb, $blue-main 5%, white 95%);
-$form-fill          : #ebebeb;
-$form-border        : #d3d3d3;
-$white-same         : #ebebeb; // same colour as form fill but different in dark theme
-$blue-same          : #8BA3E0; // for e.g. view project links where i don't want colour change
-$toggle-switch      : #000030; // same as darkblue-headings but changes to different
+$blue-main                : #8BA3E0;
+$grey-text                : #706f6f;
+$darkblue-headings        : #000030;
+$background-main          : color-mix(in srgb, $blue-main 5%, white 95%);
+$form-fill                : #ebebeb;
+$form-border              : #d3d3d3;
+$white-same               : #ebebeb; // same colour as form fill but different in dark theme
+$blue-same                : #8BA3E0; // for e.g. view project links where i don't want colour change
+$toggle-switch            : #000030; // same as darkblue-headings but changes to different
+$code-example-bg          : #050A14; // Ʌ
+$code-example-text        : #ebebeb; // | 
+$code-example-comment     : #00D100; // -- code example colours are essentially inverted from rest of site for emphasis
+$code-example-highlight-1 : #E88FFA; // |
+$code-example-highlight-2 : #FFC05C; // V
+
 
 // 'night' colours for dark mode
-$blue-main-night          : #192D5D;//#C7D2F0;
-$darkblue-headings-night  : #EBEFFA;
-$grey-text-night          : #DBDBDB;
-$background-main-night    : #050A14;
-$white-same-night         : #ebebeb;
-$form-fill-night          : #393939;
-$form-border-night        : #525252;
-$blue-same-night          : #8BA3E0;
-$toggle-switch-night      : #8BA3E0;
+$blue-main-night                : #192D5D;
+$darkblue-headings-night        : #EBEFFA;
+$grey-text-night                : #DBDBDB;
+$background-main-night          : #050A14;
+$white-same-night               : #ebebeb;
+$form-fill-night                : #393939;
+$form-border-night              : #525252;
+$blue-same-night                : #8BA3E0;
+$toggle-switch-night            : #8BA3E0;
+$code-example-bg-night          : #ebebeb;
+$code-example-text-night        : #192D5D; 
+$code-example-comment-night     : #006400; 
+$code-example-highlight-1-night : #D327F5;
+$code-example-highlight-2-night : #DE8A00;

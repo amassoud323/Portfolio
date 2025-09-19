@@ -5,7 +5,8 @@
 
   .code-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media (min-width: $brk--md) { flex-direction: row;}
   }
 
   .home-link {
@@ -16,17 +17,19 @@
 
   .code-example { 
     display: flex;
-    flex-wrap: wrap;
     padding: 6px;
-    background-color: var(--main-background);
+    background-color: var(--code-example-bg);
+    color: var(--code-example-text);
     border: 2px solid var(--header);
     border-radius: 3px;
-    font-size: $font-size--small;
+    font-size: $font-size-xs;
     flex-direction: column;
-    width: 100vw;
+    width: 92vw;
+    height: fit-content;
+    justify-content: start;
     
     @media (min-width: $brk--md) {
-      flex-direction: row;
+      flex-direction: column;
       width: 40vw; 
     }
     
@@ -34,36 +37,60 @@
 
   .code-description {
     padding: 0 10px;
-    text-align: right;
-    width: 30vw;
-    margin-left: 40px;
     display: flex;
     flex-direction: column;
+    @media (min-width: $brk--md) {
+      width: 40vw;
+      text-align: right;
+      margin-left: 5px;
+      h3 { margin: 0;}
+    }
   }
 
   pre {
-    margin: 3px;
-    flex-wrap: wrap;
-    .indent { margin-left: 15px; font-family: 'Courier New', Courier, monospace; }
-    .indent-2 { margin-left: 30px; font-family: 'Courier New', Courier, monospace; }
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--code-example-text);
+    .indent { 
+      margin: 3px 0 3px 10px; 
+      font-family: 'Courier New', Courier, monospace; 
+      color: var(--code-example-text);
+    }
+    .indent-2 { 
+      margin: 3px 0 3px 20px; 
+      font-family: 'Courier New', Courier, monospace; 
+      color: var(--code-example-text);
+    }
   }
 
   code {
     font-family: 'Courier New', Courier, monospace;
-    
+    color: var(--code-example-text);
   }
 
   .comment { 
     font-style: italic; 
-    color: darkgreen; 
+    color: var(--code-example-comment);
     flex-wrap: wrap;
     white-space: pre-wrap;
     word-break: break-word;
+    margin-bottom: 3px;
+  }
+
+  .highlight-1 { 
+    color: var(--code-example-highlight-1); 
+    font-family: 'Courier New', Courier, monospace; 
+  }
+  
+  .highlight-2 { 
+    color: var(--code-example-highlight-2); 
+    font-family: 'Courier New', Courier, monospace; 
   }
 
   .description {
     font-style: italic;
     color: var(--text-alt);
-
+    
   }
 }

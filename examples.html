@@ -75,7 +75,7 @@
       <div class="code-container">
         <div class="code-example">
           <pre><code class="comment">// Colour codes for easy use throughout project without having to manually define each time</code>
-            <code>@mixin service-colors {</code>
+            <code><span class="highlight-1">@mixin</span> service-colors {</code>
             <code><span class="indent">&--base { --color: #{$bay-view}; }</span></code>
             <code><span class="indent">&--blue { --color: #{$magical-merlin}; }</span></code>
             <code><span class="indent">&--green { --color: #{$ufo-green}; }</span></code>
@@ -88,16 +88,16 @@
             <code>}</code></pre>
 
           <pre><code class="comment">// Colour-codes services section for use in services and dropdown menu</code>
-          <code>@mixin implement-service-colors {</code>
-            <code><span class="indent">@include service-colors;</span></code>
+          <code><span class="highlight-1">@mixin</span> implement-service-colors {</code>
+            <code><span class="indent"><span class="highlight-2">@include</span> service-colors;</span></code>
               <code><span class="indent">&--icon {</span></code>
-                <code><span class="indent-2">@include icons; </span></code>
+                <code><span class="indent-2"><span class="highlight-2">@include</span> icons; </span></code>
                 <code><span class="indent-2">background-color: var(--color, $dark-grey);</span></code>
                 <code><span class="indent-2">margin-bottom: 17px;</span></code>
               <code><span class="indent">}</span></code>
 
               <code><span class="indent">&--read-more {</span></code>
-                <code><span class="indent-2">@include button-read-more;</span></code>
+                <code><span class="indent-2"><span class="highlight-2">@include</span> button-read-more;</span></code>
                 <code><span class="indent-2">background-color: var(--color, $dark-grey);</span></code>
               <code><span class="indent">}</span></code>
             <code>}</code></pre>

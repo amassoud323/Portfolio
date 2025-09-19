@@ -10,6 +10,11 @@ html {
   --white-same: #{$white-same};
   --blue-same: #{$blue-same};
   --toggle-switch: #{$toggle-switch};
+  --code-example-bg: #{$code-example-bg};
+  --code-example-text: #{$code-example-text};
+  --code-example-comment: #{$code-example-comment};
+  --code-example-highlight-1: #{$code-example-highlight-1};
+  --code-example-highlight-2: #{$code-example-highlight-2};
 }
 
 // Defining colours for 'night' theme
@@ -23,4 +28,9 @@ html {
   --white-same: #{$white-same-night};
   --blue-same: #{$blue-same-night};
   --toggle-switch: #{$toggle-switch-night};
+  --code-example-bg: #{$code-example-bg-night};
+  --code-example-text: #{$code-example-text-night};
+  --code-example-comment: #{$code-example-comment-night};
+  --code-example-highlight-1: #{$code-example-highlight-1-night};
+  --code-example-highlight-2: #{$code-example-highlight-2-night};
 }

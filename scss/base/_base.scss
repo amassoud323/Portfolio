@@ -35,6 +35,9 @@ main {
 .home-link {
     @include scroll-links;
     color: var(--header);
+    padding-top: 15px;
+    width: fit-content;
+    margin: 0 auto;
     svg { 
       fill: var(--header);
       margin-bottom: 5px;
